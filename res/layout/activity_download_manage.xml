@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainView"
+    android:background="@drawable/bghigh1"
+    tools:context=".AppListActivity" >
+
+    <ImageView
+        android:id="@+id/imageViewReturn"
+        android:layout_width="@dimen/btn_return_width"
+        android:layout_height="@dimen/btn_return_height"
+        android:layout_marginLeft="@dimen/applist_titlebar_margin_leftright"
+        android:layout_marginTop="@dimen/applist_titlebar_margin_top"
+        android:src="@drawable/btn_return" />
+    
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/applist_titlebar_text_margin_left"
+        android:layout_toRightOf="@+id/imageViewReturn"
+        android:layout_alignTop="@+id/imageViewReturn"
+        android:layout_alignBottom="@+id/imageViewReturn"
+        android:textSize="@dimen/applist_title_text_size"
+        android:text="" />
+
+    <LinearLayout
+        android:id="@+id/titlebar_underline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/applist_titlebar_underline_height"
+        android:layout_below="@+id/imageViewReturn"
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/applist_titlebar_margin_leftright"
+        android:layout_marginRight="@dimen/applist_titlebar_margin_leftright"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_alignLeft="@+id/titlebar_underline"
+        android:layout_alignRight="@+id/titlebar_underline"
+        android:layout_below="@+id/titlebar_underline"
+        android:layout_marginTop="@dimen/applist_titlebar_gridview_margin_top"
+        android:layout_marginBottom="@dimen/applist_gridview_margin_bottom"
+        />
+</RelativeLayout>

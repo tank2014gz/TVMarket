@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="metro_top_margin">60dip</dimen>
+    
+    <!-- app detail dialog -->
+    <dimen name="appdetail_dialog_width">230dip</dimen>
+    <dimen name="appdetail_dialog_height">387dip</dimen>
+    
+</resources>

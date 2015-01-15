@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bghigh1"
+    android:id="@+id/rl"  >
+   
+    <ImageView
+        android:id="@+id/imageViewReturn"
+        android:layout_width="@dimen/btn_return_width"
+        android:layout_height="@dimen/btn_return_height"
+        android:layout_marginLeft="@dimen/applist_titlebar_margin_leftright"
+        android:layout_marginTop="@dimen/applist_titlebar_margin_top"
+        android:src="@drawable/btn_return" />
+    
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/applist_titlebar_text_margin_left"
+        android:layout_toRightOf="@+id/imageViewReturn"
+        android:layout_alignTop="@+id/imageViewReturn"
+        android:layout_alignBottom="@+id/imageViewReturn"
+        android:textSize="@dimen/applist_title_text_size"
+        android:text="@string/set_background" />
+
+    <LinearLayout
+        android:id="@+id/titlebar_underline1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/applist_titlebar_underline_height"
+        android:layout_below="@+id/imageViewReturn"
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/applist_titlebar_margin_leftright"
+        android:layout_marginRight="@dimen/applist_titlebar_margin_leftright"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical" >
+    </LinearLayout>
+<RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/titlebar_underline1"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    >
+    <com.soniq.tvmarket.ui.widget.MetroItemView
+         android:clipChildren="false"
+         android:id="@+id/set_bg1" 
+         android:background="@drawable/image_button_bg" 
+         android:focusable="true" 
+         android:focusableInTouchMode="true"
+        
+         android:layout_width="@dimen/setting_bg_item_width" 
+         android:layout_height="@dimen/setting_bg_item_height" 
+         android:layout_marginTop="@dimen/setting_bg_content_margintop" 
+         android:layout_marginLeft="0dip"
+    ></com.soniq.tvmarket.ui.widget.MetroItemView>
+    
+    <com.soniq.tvmarket.ui.widget.MetroItemView
+        android:clipChildren="false"
+        android:id="@+id/set_bg2" 
+        android:background="@drawable/image_button_bg" 
+        android:focusable="true" 
+        android:focusableInTouchMode="true"
+       
+        android:layout_width="@dimen/setting_bg_item_width" 
+        android:layout_height="@dimen/setting_bg_item_height" 
+        android:layout_marginLeft="@dimen/setting_bg_item_marginleft" 
+        android:layout_toRightOf="@id/set_bg1" 
+        android:layout_marginTop="@dimen/setting_bg_content_margintop"
+        />
+    
+    <com.soniq.tvmarket.ui.widget.MetroItemView
+        android:clipChildren="false"
+        android:id="@+id/set_bg3" 
+        android:background="@drawable/image_button_bg" 
+        android:focusable="true" 
+        android:focusableInTouchMode="true"
+        android:layout_width="@dimen/setting_bg_item_width" 
+        android:layout_height="@dimen/setting_bg_item_height" 
+        android:layout_marginLeft="@dimen/setting_bg_item_marginleft" 
+        android:layout_marginTop="@dimen/setting_bg_content_margintop"
+        android:layout_toRightOf="@id/set_bg2" 
+        
+        />
+    
+    <com.soniq.tvmarket.ui.widget.MetroItemView
+        android:clipChildren="false"
+        android:id="@+id/set_bg4" 
+        android:background="@drawable/image_button_bg" 
+        android:focusable="true" 
+        android:focusableInTouchMode="true"
+        android:layout_width="@dimen/setting_bg_item_width" 
+        android:layout_height="@dimen/setting_bg_item_height" 
+        android:layout_marginLeft="@dimen/setting_bg_item_marginleft" 
+        android:layout_marginTop="@dimen/setting_bg_content_margintop"
+        android:layout_toRightOf="@id/set_bg3" 
+       
+        />
+   
+    <com.soniq.tvmarket.ui.widget.MetroItemView
+           android:clipChildren="false"
+           android:id="@+id/set_bg5"
+           android:background="@drawable/image_button_bg"  
+           android:focusable="true" 
+           android:focusableInTouchMode="true"
+           android:layout_width="@dimen/setting_bg_item_width" 
+           android:layout_height="@dimen/setting_bg_item_height" 
+           android:layout_marginLeft="0dip"
+           android:layout_marginTop="@dimen/setting_bg_item_margintop" 
+           android:layout_below="@id/set_bg1" 
+           /> 
+           
+    <com.soniq.tvmarket.ui.widget.MetroItemView
+           android:clipChildren="false"
+           android:id="@+id/set_bg6"
+           android:background="@drawable/image_button_bg" 
+           android:focusable="true" 
+           android:focusableInTouchMode="true"
+           android:layout_width="@dimen/setting_bg_item_width" 
+           android:layout_height="@dimen/setting_bg_item_height" 
+           android:layout_marginLeft="@dimen/setting_bg_item_marginleft" 
+           android:layout_marginTop="@dimen/setting_bg_item_margintop" 
+           android:layout_toRightOf="@id/set_bg5" 
+           android:layout_below="@id/set_bg1"
+           />
+    
+    <com.soniq.tvmarket.ui.widget.MetroItemView
+           android:clipChildren="false"
+           android:id="@+id/set_bg7" 
+           android:background="@drawable/image_button_bg" 
+           android:focusable="true" 
+           android:focusableInTouchMode="true"
+           android:layout_width="@dimen/setting_bg_item_width" 
+           android:layout_height="@dimen/setting_bg_item_height" 
+           android:layout_marginLeft="@dimen/setting_bg_item_marginleft" 
+           android:layout_marginTop="@dimen/setting_bg_item_margintop" 
+           android:layout_toRightOf="@id/set_bg6" 
+           android:layout_below="@id/set_bg1"
+           /> 
+    
+    <com.soniq.tvmarket.ui.widget.MetroItemView
+           android:clipChildren="false"
+           android:id="@+id/set_bg8" 
+           android:background="@drawable/image_button_bg"
+           android:focusable="true" 
+           android:focusableInTouchMode="true"
+           android:layout_width="@dimen/setting_bg_item_width" 
+           android:layout_height="@dimen/setting_bg_item_height" 
+           android:layout_marginLeft="@dimen/setting_bg_item_marginleft" 
+           android:layout_marginTop="@dimen/setting_bg_item_margintop"
+           android:layout_toRightOf="@id/set_bg7" 
+           android:layout_below="@id/set_bg1"
+           />
+    
+    <com.soniq.tvmarket.ui.widget.MetroItemView
+           android:clipChildren="false"
+           android:id="@+id/set_bg9" 
+           android:background="@drawable/image_button_bg"
+           android:focusable="true" 
+           android:focusableInTouchMode="true"
+           android:layout_width="@dimen/setting_bg_item_width" 
+           android:layout_height="@dimen/setting_bg_item_height" 
+           android:layout_marginLeft="0dip"
+           android:layout_marginTop="@dimen/setting_bg_item_margintop" 
+           android:layout_below="@id/set_bg5" 
+           />
+    
+    <com.soniq.tvmarket.ui.widget.MetroItemView
+           android:clipChildren="false"
+           android:id="@+id/set_bg10" 
+           android:background="@drawable/image_button_bg"
+           android:focusable="true" 
+           android:focusableInTouchMode="true"
+           android:layout_width="@dimen/setting_bg_item_width" 
+           android:layout_height="@dimen/setting_bg_item_height" 
+           android:layout_marginLeft="@dimen/setting_bg_item_marginleft" 
+           android:layout_marginTop="@dimen/setting_bg_item_margintop" 
+           android:layout_toRightOf="@id/set_bg9" 
+           android:layout_below="@id/set_bg5"
+           />
+    
+    <com.soniq.tvmarket.ui.widget.MetroItemView
+           android:clipChildren="false"
+           android:id="@+id/set_bg11" 
+           android:background="@drawable/image_button_bg"
+           android:focusable="true" 
+           android:focusableInTouchMode="true"
+           android:layout_width="@dimen/setting_bg_item_width" 
+           android:layout_height="@dimen/setting_bg_item_height" 
+           android:layout_marginLeft="@dimen/setting_bg_item_marginleft" 
+           android:layout_marginTop="@dimen/setting_bg_item_margintop" 
+           android:layout_toRightOf="@id/set_bg10" 
+           android:layout_below="@id/set_bg5"
+           />
+    
+     <com.soniq.tvmarket.ui.widget.MetroItemView
+           android:clipChildren="false"
+           android:id="@+id/set_bg12" 
+           android:background="@drawable/image_button_bg"
+           android:focusable="true" 
+           android:focusableInTouchMode="true"
+           android:layout_width="@dimen/setting_bg_item_width" 
+           android:layout_height="@dimen/setting_bg_item_height" 
+           android:layout_marginLeft="@dimen/setting_bg_item_marginleft" 
+           android:layout_marginTop="@dimen/setting_bg_item_margintop" 
+           android:layout_toRightOf="@id/set_bg11" 
+           android:layout_below="@id/set_bg5"
+           />
+     </RelativeLayout>
+
+</RelativeLayout>

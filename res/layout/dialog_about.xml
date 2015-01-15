@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_tips"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:id="@+id/dialog_about_ll"
+        >
+    <ImageView
+        android:id="@+id/about_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/about_ic_launcher" />
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_centerInParent="true"
+        
+        >
+        <TextView
+        android:id="@+id/about_text1"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tips_dialog_text_size"
+        android:text="TextView" />
+        
+        <TextView
+        android:id="@+id/about_text2"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="TextView" />
+        
+        <TextView
+        android:id="@+id/about_text3"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="TextView" />
+        </LinearLayout>
+
+</LinearLayout>
+
+
+</RelativeLayout>

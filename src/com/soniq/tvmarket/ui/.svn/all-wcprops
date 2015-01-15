@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/soniq/!svn/ver/409/android/TVMarket/src/com/soniq/tvmarket/ui
+END
+AppListActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/soniq/!svn/ver/412/android/TVMarket/src/com/soniq/tvmarket/ui/AppListActivity.java
+END
+MyBaseActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/soniq/!svn/ver/408/android/TVMarket/src/com/soniq/tvmarket/ui/MyBaseActivity.java
+END
+RecommendPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/soniq/!svn/ver/389/android/TVMarket/src/com/soniq/tvmarket/ui/RecommendPage.java
+END
+MainActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/soniq/!svn/ver/407/android/TVMarket/src/com/soniq/tvmarket/ui/MainActivity.java
+END
+SplashScreenActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/soniq/!svn/ver/409/android/TVMarket/src/com/soniq/tvmarket/ui/SplashScreenActivity.java
+END
+GamePage.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/soniq/!svn/ver/389/android/TVMarket/src/com/soniq/tvmarket/ui/GamePage.java
+END
+TestActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/soniq/!svn/ver/389/android/TVMarket/src/com/soniq/tvmarket/ui/TestActivity.java
+END
+BasePage.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/soniq/!svn/ver/387/android/TVMarket/src/com/soniq/tvmarket/ui/BasePage.java
+END
+ApplicationPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/soniq/!svn/ver/389/android/TVMarket/src/com/soniq/tvmarket/ui/ApplicationPage.java
+END
+SetBackgroundActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/soniq/!svn/ver/389/android/TVMarket/src/com/soniq/tvmarket/ui/SetBackgroundActivity.java
+END
+SettingPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/soniq/!svn/ver/402/android/TVMarket/src/com/soniq/tvmarket/ui/SettingPage.java
+END
+MyApplation.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/soniq/!svn/ver/405/android/TVMarket/src/com/soniq/tvmarket/ui/MyApplation.java
+END
+DownloadManageActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/soniq/!svn/ver/389/android/TVMarket/src/com/soniq/tvmarket/ui/DownloadManageActivity.java
+END
+AppDetailDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/soniq/!svn/ver/389/android/TVMarket/src/com/soniq/tvmarket/ui/AppDetailDialog.java
+END
+SearchActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/soniq/!svn/ver/389/android/TVMarket/src/com/soniq/tvmarket/ui/SearchActivity.java
+END
+AppManageActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/soniq/!svn/ver/389/android/TVMarket/src/com/soniq/tvmarket/ui/AppManageActivity.java
+END
+FeedbackActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/soniq/!svn/ver/389/android/TVMarket/src/com/soniq/tvmarket/ui/FeedbackActivity.java
+END

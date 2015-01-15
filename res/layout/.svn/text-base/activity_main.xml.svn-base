@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainView"
+    android:background="@drawable/bghigh1"
+    tools:context=".MainActivity" >
+    
+    <LinearLayout android:id="@+id/menubar"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/menubar_paddingLeft" 
+        android:paddingTop="@dimen/menubar_paddingTop"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_alignParentTop="true">
+        <ImageView android:id="@+id/tab_menu_recommend" android:focusable="true" android:layout_width="@dimen/tab_text_width" android:layout_height="@dimen/tab_text_height" />
+        <ImageView android:id="@+id/tab_menu_application" android:focusable="true" android:layout_width="@dimen/tab_text_width" android:layout_height="@dimen/tab_text_height" />
+        <ImageView android:id="@+id/tab_menu_game" android:focusable="true" android:layout_width="@dimen/tab_text_width" android:layout_height="@dimen/tab_text_height" />
+        <ImageView android:id="@+id/tab_menu_setting" android:focusable="true" android:layout_width="@dimen/tab_text_width" android:layout_height="@dimen/tab_text_height" />
+    </LinearLayout>
+    <Button android:id="@+id/btn_search"
+        android:focusable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_search_selector"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/search_button_margin_right"
+        android:layout_marginTop="@dimen/search_button_margin_top"
+        />
+        <LinearLayout
+        android:gravity="center_horizontal" 
+        android:orientation="vertical" 
+        android:id="@+id/viewpager_layout" 
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+        android:layout_below="@id/menubar"
+		>
+	        <android.support.v4.view.ViewPager 
+	            android:layout_gravity="center_horizontal" 
+	            android:id="@+id/viewpager" 
+	            android:layout_width="match_parent" 
+	            android:layout_height="match_parent" />
+    </LinearLayout>
+    
+    
+</RelativeLayout>

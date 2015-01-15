@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="green">#ff00ff00</color>
+    <color name="orange">#fff58220</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray">#ff616161</color>
+    <color name="dark">#ff333333</color>
+    <color name="red">#ffff0000</color>
+    <color name="album_text_normal">#ff6f6f6f</color>
+    <color name="album_text_focus">#ffffffff</color>
+    <color name="button_title_shadow_color">#88000000</color>
+</resources>

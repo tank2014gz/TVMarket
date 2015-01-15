@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bghigh1"
+    android:id="@+id/mainView"
+    tools:context=".AppListActivity" >
+
+    <ImageView
+        android:id="@+id/imageViewReturn"
+        android:layout_width="@dimen/btn_return_width"
+        android:layout_height="@dimen/btn_return_height"
+        android:layout_marginLeft="@dimen/applist_titlebar_margin_leftright"
+        android:layout_marginTop="@dimen/applist_titlebar_margin_top"
+        android:src="@drawable/btn_return" />
+    
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/applist_titlebar_text_margin_left"
+        android:layout_toRightOf="@+id/imageViewReturn"
+        android:layout_alignTop="@+id/imageViewReturn"
+        android:layout_alignBottom="@+id/imageViewReturn"
+        android:textSize="@dimen/applist_title_text_size"
+        android:text="" />
+    
+    <LinearLayout
+        android:id="@+id/titlebar_underline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/applist_titlebar_underline_height"
+        android:layout_below="@+id/imageViewReturn"
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/applist_titlebar_margin_leftright"
+        android:layout_marginRight="@dimen/applist_titlebar_margin_leftright"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+
+    
+    <RelativeLayout
+        android:id="@+id/keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_alignLeft="@+id/titlebar_underline"
+        android:layout_below="@+id/textViewInputBox"
+        android:layout_marginTop="10dip"
+        >
+       </RelativeLayout>
+       
+    <TextView
+        android:id="@+id/textViewInputBox"
+        android:textColor="@color/white"
+        android:singleLine="true"
+        android:gravity="center_vertical"
+        android:layout_width="@dimen/search_inputbox_width"
+        android:layout_height="@dimen/search_inputbox_height"
+        android:textSize="@dimen/search_inputbox_text_size"
+        android:background="@drawable/bg_inputbox"
+        android:layout_alignLeft="@+id/keyboard"
+        android:layout_alignRight="@+id/keyboard"
+        android:layout_below="@+id/titlebar_underline"
+        android:layout_marginTop="@dimen/search_keyboard_margin_top"
+        android:text="" />
+    
+    
+       
+    <ListView android:id="@+id/listView"
+        android:background="#44000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/textViewInputBox"
+        android:layout_alignBottom="@id/keyboard"
+        android:layout_toRightOf="@id/keyboard"
+        android:layout_marginLeft="30dip"
+        android:layout_alignRight="@id/titlebar_underline"
+        />
+    <RelativeLayout 
+        android:id="@+id/loading_layer"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/listView"
+        android:layout_alignBottom="@+id/listView"
+        android:layout_alignLeft="@+id/listView"
+        android:layout_alignRight="@+id/listView"
+        >
+    <ImageView
+        android:id="@+id/imageViewLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/publicloading" />
+    <TextView
+        android:id="@+id/textViewLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/loading_text_margin_top"
+        android:layout_centerInParent="true"
+        android:text="@string/default_loading_text"
+        android:textSize="@dimen/loading_text_size"
+        android:textColor="@color/white"
+        android:layout_below="@+id/imageViewLoading"
+        />
+        		        
+    </RelativeLayout>
+
+</RelativeLayout>

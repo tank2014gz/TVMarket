@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bghigh1"
+    android:clipChildren="false"
+    tools:context=".SplashScreenActivity" >
+
+    <ImageView
+        android:id="@+id/imageViewLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/publicloading" />
+    <TextView
+        android:id="@+id/textViewLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/loading_text_margin_top"
+        android:layout_centerHorizontal="true"
+        android:text="@string/default_loading_text"
+        android:textSize="@dimen/loading_text_size"
+        android:textColor="@color/white"
+        android:layout_below="@+id/imageViewLoading"
+        />
+</RelativeLayout>

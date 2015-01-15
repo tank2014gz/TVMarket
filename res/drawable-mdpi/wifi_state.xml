@@ -1,0 +1,7 @@
+<level-list xmlns:android="http://schemas.android.com/apk/res/android"> 
+    <item android:maxLevel="50" android:drawable="@drawable/wifi_state_50" /> 
+    <item android:maxLevel="70" android:drawable="@drawable/wifi_state_70" /> 
+    <item android:maxLevel="90" android:drawable="@drawable/wifi_state_90" /> 
+    <item android:maxLevel="100" android:drawable="@drawable/wifi_state_100" /> 
+    <item android:maxLevel="1000" android:drawable="@drawable/wifi_state_none" /> 
+</level-list>

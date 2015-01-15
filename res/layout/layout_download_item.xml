@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingBottom="@dimen/download_icon_margin_top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageViewIcon"
+        android:layout_width="@dimen/applist_app_item_width"
+        android:layout_height="@dimen/applist_app_item_height"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/download_icon_margin_top"
+        android:layout_marginLeft="@dimen/download_icon_margin_left"
+        android:src="@drawable/app_loading" />
+    
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/applist_app_item_text_height"
+        android:textSize="@dimen/applist_app_item_text_size"
+        android:layout_toRightOf="@+id/imageViewIcon"
+        android:layout_alignTop="@+id/imageViewIcon"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="15dip"
+        android:text="APP Name"
+        />
+    <com.soniq.tvmarket.component.MyProgressBar 
+        android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/appdetail_dialog_button_height"
+            android:indeterminate="false"
+            android:indeterminateOnly="false"
+            android:background="@drawable/bg_progressbar"
+            android:progressDrawable="@drawable/fg_progressbar_layer"
+            android:maxHeight="20dip"
+            android:minHeight="20dip"
+            android:max="100"
+            android:progress="10"
+        android:layout_toRightOf="@+id/imageViewIcon"
+        android:layout_alignBottom="@+id/imageViewIcon"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="@dimen/download_icon_margin_left"
+        
+        />
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/appdetail_dialog_app_info_text_size"
+        android:layout_toRightOf="@+id/imageViewIcon"
+        android:layout_alignBottom="@+id/imageViewIcon"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="@dimen/download_icon_margin_left"
+        android:text=""
+        />
+    
+
+</RelativeLayout>

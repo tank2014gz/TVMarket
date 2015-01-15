@@ -1,0 +1,725 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi
+END
+bg_progressbar.png
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bg_progressbar.png
+END
+feedback1.png
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/feedback1.png
+END
+feedback2.png
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/feedback2.png
+END
+bg_dialog_button_list.png
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bg_dialog_button_list.png
+END
+feedback3.png
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/feedback3.png
+END
+feedback4.png
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/feedback4.png
+END
+setting_help.png
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/setting_help.png
+END
+feedback5.png
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/feedback5.png
+END
+feedback6.png
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/feedback6.png
+END
+feedback7.png
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/feedback7.png
+END
+feedback8.png
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/feedback8.png
+END
+wifi_state.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/wifi_state.xml
+END
+menu_app_selected.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/menu_app_selected.png
+END
+bglow1.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bglow1.jpg
+END
+call_locate_gray.9.png
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/call_locate_gray.9.png
+END
+bglow2.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bglow2.jpg
+END
+bglow3.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bglow3.jpg
+END
+bglow4.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bglow4.jpg
+END
+setting_about.png
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/setting_about.png
+END
+bglow5.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bglow5.jpg
+END
+bg_app_focused.png
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bg_app_focused.png
+END
+bg_download_list_selected.png
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bg_download_list_selected.png
+END
+bglow6.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bglow6.jpg
+END
+bglow7.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bglow7.jpg
+END
+bg_button_green_normal.9.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bg_button_green_normal.9.png
+END
+bglow8.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bglow8.jpg
+END
+ad_placeholder.9.png
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/ad_placeholder.9.png
+END
+bghigh1.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bghigh1.jpg
+END
+bglow9.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bglow9.jpg
+END
+bghigh2.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bghigh2.jpg
+END
+bghigh3.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bghigh3.jpg
+END
+bghigh4.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bghigh4.jpg
+END
+bghigh5.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bghigh5.jpg
+END
+btn_search_char_normal.9.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/btn_search_char_normal.9.png
+END
+bghigh6.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bghigh6.jpg
+END
+menu_game_selected.png
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/menu_game_selected.png
+END
+bghigh7.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bghigh7.jpg
+END
+bghigh8.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bghigh8.jpg
+END
+bg_btn_green_focused.9.png
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bg_btn_green_focused.9.png
+END
+bghigh9.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bghigh9.jpg
+END
+setting_change_background.png
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/setting_change_background.png
+END
+bg_btn_orange_focused.9.png
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bg_btn_orange_focused.9.png
+END
+netinformation.png
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/netinformation.png
+END
+bg_reflected_normal.9.png
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bg_reflected_normal.9.png
+END
+wifi_state_90.png
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/wifi_state_90.png
+END
+btn_show_detail.png
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/btn_show_detail.png
+END
+btn_return.png
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/btn_return.png
+END
+bg_button_green_focused.9.png
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bg_button_green_focused.9.png
+END
+wifi_state_50.png
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/wifi_state_50.png
+END
+about_ic_launcher.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/about_ic_launcher.png
+END
+menu_game_normal.png
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/menu_game_normal.png
+END
+menu_app_focused.png
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/menu_app_focused.png
+END
+bghigh10.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bghigh10.jpg
+END
+bghigh11.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bghigh11.jpg
+END
+bghigh12.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bghigh12.jpg
+END
+game2.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/game2.png
+END
+game3.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/game3.png
+END
+setting_apps.png
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/setting_apps.png
+END
+game4.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/game4.png
+END
+game5.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/game5.png
+END
+game6.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/game6.png
+END
+game7.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/game7.png
+END
+game8.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/game8.png
+END
+bg_btn_orange_normal.9.png
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bg_btn_orange_normal.9.png
+END
+bglow10.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bglow10.jpg
+END
+bg_inputbox.9.png
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bg_inputbox.9.png
+END
+setting_remote_controller.png
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/setting_remote_controller.png
+END
+game9.png
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/game9.png
+END
+bglow11.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bglow11.jpg
+END
+bglow12.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bglow12.jpg
+END
+menu_game_focused.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/menu_game_focused.png
+END
+menu_setting_selected.png
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/menu_setting_selected.png
+END
+wifi_state_none.png
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/wifi_state_none.png
+END
+bg_dialog_appinfo.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bg_dialog_appinfo.png
+END
+fg_progressbar.9.png
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/fg_progressbar.9.png
+END
+setting_feedback.png
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/setting_feedback.png
+END
+menu_recommend_focused.png
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/menu_recommend_focused.png
+END
+menu_setting_normal.png
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/menu_setting_normal.png
+END
+setting_download.png
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/setting_download.png
+END
+wifi_state_100.png
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/wifi_state_100.png
+END
+bg_shadow_highlight.9.png
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bg_shadow_highlight.9.png
+END
+bg_btn_red_normal.9.png
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bg_btn_red_normal.9.png
+END
+menu_recommend_selected.png
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/menu_recommend_selected.png
+END
+app_loading.png
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/app_loading.png
+END
+tab_metro_item_bg.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/tab_metro_item_bg.png
+END
+bg_btn_gray_focused.9.png
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bg_btn_gray_focused.9.png
+END
+btn_search_focused.png
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/btn_search_focused.png
+END
+ic_launcher.png
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/ic_launcher.png
+END
+menu_app_normal.png
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/menu_app_normal.png
+END
+loading_bg.png
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/loading_bg.png
+END
+menu_setting_focused.png
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/menu_setting_focused.png
+END
+menu_recommend_normal.png
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/menu_recommend_normal.png
+END
+bg_btn_green_normal.9.png
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bg_btn_green_normal.9.png
+END
+btn_search_char_focused.9.png
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/btn_search_char_focused.9.png
+END
+setting_upgrade.png
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/setting_upgrade.png
+END
+bg_btn_gray_normal.9.png
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bg_btn_gray_normal.9.png
+END
+wifi_state_70.png
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/wifi_state_70.png
+END
+app2.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/app2.png
+END
+app3.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/app3.png
+END
+publicloading.png
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/publicloading.png
+END
+app4.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/app4.png
+END
+metro_item_life_1.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/metro_item_life_1.png
+END
+app5.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/app5.png
+END
+metro_item_life_2.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/metro_item_life_2.png
+END
+app6.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/app6.png
+END
+metro_item_life_3.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/metro_item_life_3.png
+END
+app7.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/app7.png
+END
+bg_shadow_normal.9.png
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bg_shadow_normal.9.png
+END
+metro_item_life_4.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/metro_item_life_4.png
+END
+bg_btn_red_focused.9.png
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bg_btn_red_focused.9.png
+END
+app8.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/app8.png
+END
+metro_item_life_5.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/metro_item_life_5.png
+END
+app9.png
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/app9.png
+END
+metro_item_life_6.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/metro_item_life_6.png
+END
+metro_item_life_7.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/metro_item_life_7.png
+END
+metro_item_life_8.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/metro_item_life_8.png
+END
+btn_search_normal.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/btn_search_normal.png
+END
+metro_item_life_9.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/metro_item_life_9.png
+END
+bg_tips.9.png
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/bg_tips.9.png
+END
+btn_search_static.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/soniq/!svn/ver/387/android/TVMarket/res/drawable-mdpi/btn_search_static.png
+END

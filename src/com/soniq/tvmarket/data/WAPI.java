@@ -1,0 +1,540 @@
+package com.soniq.tvmarket.data;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.net.URLEncoder;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.HttpStatus;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.params.HttpClientParams;
+import org.apache.http.conn.ClientConnectionManager;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.params.BasicHttpParams;
+import org.apache.http.params.CoreConnectionPNames;
+import org.apache.http.params.HttpParams;
+import org.apache.http.util.EntityUtils;
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.json.JSONTokener;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
+
+import android.app.Activity;
+import android.content.Context;
+import android.util.DisplayMetrics;
+import android.util.Log;
+
+import com.soniq.tvmarket.utils.*;
+
+public class WAPI {
+
+	private static WAPI myProfileInstance = null;
+
+	// public final static String WAPI_BASE_URL =
+	// "http://services.cinavision.cn/tvmarket";
+	public final static String WAPI_BASE_URL = "http://www.timesyw.com:8080/tvmarket/WAPI";
+	// public final static String WAPI_BASE_URL = "http://10.6.6.239/tvmarket";
+
+	// 首页
+	// public final static String WAPI_HOME_URL = WAPI_BASE_URL + "/home.php";
+	public final static String WAPI_HOME_URL = WAPI_BASE_URL + "/home.jsp";
+
+	// 获取分类下得app列表
+	public final static String WAPI_GET_APPLIST_URL = WAPI_BASE_URL
+			+ "/getapplist.jsp";
+
+	// 搜索接口
+	public final static String WAPI_GET_SEARCH_APPLIST_URL = WAPI_BASE_URL
+			+ "/search.jsp";
+
+	// 获取app信息
+	public final static String WAPI_GET_APPINFO_URL = WAPI_BASE_URL
+			+ "/getappinfo.jsp";
+
+	// 检查升级
+	public final static String WAPI_CHECK_VERSION_URL = WAPI_BASE_URL
+			+ "/checkversion.jsp";
+
+	// 反馈
+	public final static String WAPI_FEEDBACK_URL = WAPI_BASE_URL
+			+ "/feedback.jsp";
+
+	// 排行
+	public final static String WAPI_GET_RANK_LIST_URL = WAPI_BASE_URL
+			+ "/getappranklist.jsp";
+
+	// 下载通知
+	public final static String WAPI_DOWNLOAD_NOTIFY_URL = WAPI_BASE_URL
+			+ "/download.jsp";
+
+	// 获取所有应用列表(搜索用，加快反应速度)
+	public final static String WAPI_GET_ALL_APP_LIST_URL = WAPI_BASE_URL
+			+ "/getallapplist.jsp";
+
+	public static WAPI getInstance() {
+		if (myProfileInstance == null)
+			myProfileInstance = new WAPI();
+
+		return myProfileInstance;
+	}
+
+	public static String addGeneralParams(Context context, String urlString) {
+		String newURLString;
+		String splitString = "?";
+		if (urlString.indexOf("?") >= 0) {
+			splitString = "&";
+		}
+
+		newURLString = String.format("%s%svercode=%s&vername=%s&client=%s",
+				urlString, splitString, MyUtils.getVersionCode(context),
+				MyUtils.getVersionName(context), AppConfig.clientPlatform);
+
+		return newURLString;
+	}
+
+	public static String getAllAppListURLString(Context context, boolean getMD5) {
+		String urlString;
+		if (getMD5)
+			urlString = String.format("%s?md5=true", WAPI_GET_ALL_APP_LIST_URL);
+		else
+			urlString = String.format("%s", WAPI_GET_ALL_APP_LIST_URL);
+
+		urlString = addGeneralParams(context, urlString);
+
+		return urlString;
+	}
+
+	/************************************************************
+	 * 
+	 * 获取首页广告位信息
+	 * 
+	 * @param context
+	 * @return
+	 */
+	public static String getHomeURLString(Context context) {
+		String urlString = String.format("%s", WAPI_HOME_URL);
+		urlString = addGeneralParams(context, urlString);
+
+		return urlString;
+	}
+
+	public static int parseHomeJSONResponse(Context context,
+			String responseString, List<RecommendInfo> recommendList) {
+		int ret = 1;
+
+		try {
+			JSONObject jsonObject = new JSONObject(responseString);
+			JSONObject resultObject = jsonObject.getJSONObject("result");
+			int code = resultObject.getInt("code");
+			if (code == 0) {
+				JSONArray recommendArray = jsonObject
+						.getJSONArray("recommends");
+				ret = 0;
+				for (int i = 0; i < recommendArray.length(); i++) {
+					JSONObject obj = recommendArray.getJSONObject(i);
+
+					RecommendInfo ri = new RecommendInfo();
+					ri.id = getJsonInt(obj, "id", 0);
+					ri.adPos = obj.getString("pos");
+					ri.adPos = ri.adPos.replace("-", "_"); // home-lefttop -->
+															// home_lefttop
+					ri.title = getJsonString(obj, "title");
+					ri.imageUrl = getJsonString(obj, "image");
+					ri.action = getJsonString(obj, "action");
+					ri.link = getJsonString(obj, "link");
+
+					recommendList.add(ri);
+				}
+			}
+
+		} catch (Exception e) {
+
+		}
+
+		return ret;
+	}
+
+	/************************************************
+	 * 获取分类下app 列表
+	 * 
+	 * @param context
+	 * @return
+	 */
+	public static String getAppListURLString(Context context, String classkey) {
+		String urlString = String.format("%s?classkey=%s",
+				WAPI_GET_APPLIST_URL, classkey);
+		urlString = addGeneralParams(context, urlString);
+
+		return urlString;
+	}
+
+	public static String getRankAppListURLString(Context context, String rankId) {
+		String urlString = String.format("%s?rankid=%s",
+				WAPI_GET_RANK_LIST_URL, rankId);
+		urlString = addGeneralParams(context, urlString);
+
+		return urlString;
+	}
+
+	public static String getSearchAppListURLString(Context context,
+			String keyword) {
+		String s = "";
+		try {
+			s = URLEncoder.encode(keyword, "UTF-8");
+		} catch (Exception e) {
+
+		}
+
+		String urlString = String.format("%s?key=%s",
+				WAPI_GET_SEARCH_APPLIST_URL, s);
+
+		urlString = addGeneralParams(context, urlString);
+
+		Log.v(AppConfig.TAG, urlString);
+
+		return urlString;
+	}
+
+	public static int parseAppListJSONResponse(Context context,
+			String responseString, List<AppInfo> appList) {
+		int ret = 1;
+
+		try {
+			JSONObject jsonObject = new JSONObject(responseString);
+			JSONObject resultObject = jsonObject.getJSONObject("result");
+			int code = resultObject.getInt("code");
+			if (code == 0) {
+				JSONArray dataArray = jsonObject.getJSONArray("applist");
+				ret = 0;
+				for (int i = 0; i < dataArray.length(); i++) {
+					JSONObject obj = dataArray.getJSONObject(i);
+
+					AppInfo ai = new AppInfo();
+					ai.id = getJsonInt(obj, "id", 0);
+					ai.name = getJsonString(obj, "name");
+					ai.py = getJsonString(obj, "py");
+					ai.classid = getJsonInt(obj, "classid", 0);
+					ai.classname = getJsonString(obj, "classname");
+					ai.version = getJsonString(obj, "version");
+					ai.versionCode = getJsonString(obj, "versioncode");
+					ai.pkgname = getJsonString(obj, "pkgname");
+					ai.size = getJsonInt(obj, "size", 0);
+					ai.icon = getJsonString(obj, "icon");
+					ai.downurl = getJsonString(obj, "downurl");
+					ai.desc = getJsonString(obj, "desc");
+
+					appList.add(ai);
+				}
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			AppConfig.showLog("parse getalllist failed");
+		}
+
+		return ret;
+	}
+
+	/************************************************
+	 * 获取app信息
+	 * 
+	 * @param context
+	 * @return
+	 */
+	public static String getAppInfoURLString(Context context, int appId) {
+		String urlString = String.format("%s?appid=%d", WAPI_GET_APPINFO_URL,
+				appId);
+		urlString = addGeneralParams(context, urlString);
+
+		return urlString;
+	}
+
+	public static int parseAppInfoJSONResponse(Context context,
+			String responseString, AppInfo appInfo) {
+		int ret = 1;
+		try {
+			JSONObject jsonObject = new JSONObject(responseString);
+			JSONObject resultObject = jsonObject.getJSONObject("result");
+			int code = resultObject.getInt("code");
+			if (code == 0) {
+				JSONObject obj = jsonObject.getJSONObject("appinfo");
+
+				ret = 0;
+				appInfo.id = getJsonInt(obj, "id", 0);
+				appInfo.name = getJsonString(obj, "name");
+				appInfo.classid = getJsonInt(obj, "classid", 0);
+				appInfo.classname = getJsonString(obj, "classname");
+				appInfo.version = getJsonString(obj, "version");
+				appInfo.versionCode = getJsonString(obj, "versioncode");
+				appInfo.pkgname = getJsonString(obj, "pkgname");
+				appInfo.size = getJsonInt(obj, "size", 0);
+				appInfo.icon = getJsonString(obj, "icon");
+				appInfo.downurl = getJsonString(obj, "downurl");
+				appInfo.desc = getJsonString(obj, "desc");
+			}
+
+		} catch (Exception e) {
+
+		}
+
+		return ret;
+	}
+
+	public static String getAllAppListMD5String(Context context,
+			String responseString) {
+		String ret = null;
+
+		try {
+			JSONObject jsonObject = new JSONObject(responseString);
+			JSONObject resultObject = jsonObject.getJSONObject("result");
+			int code = resultObject.getInt("code");
+			if (code == 0) {
+				jsonObject = jsonObject.getJSONObject("appinfo");
+
+				String md5 = jsonObject.getString("md5");
+
+				ret = md5;
+
+			}
+
+		} catch (Exception e) {
+
+		}
+
+		return ret;
+	}
+
+	public static String http_get_content(String url) {
+		HttpGet request = new HttpGet(url);
+		// request.setHeader("User-Agent", MyProfile.http_user_agent);
+
+		HttpClient httpClient = new DefaultHttpClient();
+		try {
+			httpClient.getParams().setParameter(
+					CoreConnectionPNames.CONNECTION_TIMEOUT, 15000);
+			httpClient.getParams().setParameter(
+					CoreConnectionPNames.SO_TIMEOUT, 15000);
+			HttpResponse response = httpClient.execute(request);
+			if (response.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
+				String str = EntityUtils.toString(response.getEntity());
+				return str;
+			}
+		} catch (ClientProtocolException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	public static String getValueByTagName(Element element, String tagName) {
+		NodeList nodeList = element.getElementsByTagName(tagName);
+		if (nodeList != null && nodeList.getLength() > 0) {
+			Element e = (Element) nodeList.item(0);
+			if (e != null && e.getFirstChild() != null) {
+				return e.getFirstChild().getNodeValue().trim();
+			}
+		}
+		return "";
+	}
+
+	public static String getAttributeValueByTagName(Element element,
+			String tagName) {
+		String s = element.getAttribute(tagName);
+		return s;
+	}
+
+	public static int getIntValueByTagName(Element element, String tagName) {
+		String s = getValueByTagName(element, tagName);
+		if (s == "")
+			return 0;
+
+		return Integer.parseInt(s);
+	}
+
+	public static int getIntAttributeValueByTagName(Element element,
+			String tagName) {
+		String s = getAttributeValueByTagName(element, tagName);
+		if (s == null || s.length() < 1)
+			return 0;
+
+		return Integer.parseInt(s);
+	}
+
+	public static String get_content_from_remote_url(String url) {
+		MyUtils.showLog(url);
+
+		try {
+			String scontent = http_get_content(url);
+			if (scontent == null || scontent == "")
+				return null;
+
+			return scontent;
+		} catch (Exception e) {
+
+		}
+
+		return null;
+
+	}
+
+	public static int save_to_private_file(Context context, String scontent,
+			String filename) {
+		int ret = 1;
+		try {
+			FileOutputStream fos = context.openFileOutput(filename,
+					Context.MODE_PRIVATE);
+			fos.write(scontent.getBytes());
+			fos.close();
+			ret = 0;
+		} catch (Exception e) {
+		}
+
+		return ret;
+
+	}
+
+	public static int getJsonInt(JSONObject jsonObject, String name,
+			int defaultValue) {
+		try {
+			int n = jsonObject.getInt(name);
+
+			return n;
+		} catch (Exception e) {
+
+		}
+
+		return defaultValue;
+	}
+
+	public static String getJsonString(JSONObject jsonObject, String name) {
+		try {
+			return jsonObject.getString(name);
+		} catch (Exception e) {
+
+		}
+
+		return "";
+	}
+
+	public static JSONObject getJsonObject(JSONObject jsonObject, String name) {
+		try {
+			return jsonObject.getJSONObject(name);
+		} catch (Exception e) {
+
+		}
+
+		return null;
+	}
+
+	public static JSONArray getJsonArray(JSONObject jsonObject, String name) {
+		try {
+			return jsonObject.getJSONArray(name);
+		} catch (Exception e) {
+
+		}
+
+		return null;
+	}
+
+	public static int parseVersionInfoResponse(Context context,
+			String responseString, ArrayList<String> fieldList) {
+		int ret = 1;
+
+		try {
+			JSONObject jsonObject = new JSONObject(responseString);
+			JSONObject resultObject = jsonObject.getJSONObject("result");
+			int code = resultObject.getInt("code");
+			if (code == 0) {
+				jsonObject = jsonObject.getJSONObject("versioninfo");
+
+				String version = jsonObject.getString("versioncode");
+				String desc = jsonObject.getString("desc");
+				String force = getJsonString(jsonObject, "force");
+				String downloadurl = jsonObject.getString("downloadurl");
+
+				if (force == null || force.length() < 1)
+					force = "no";
+
+				fieldList.add(version);
+				fieldList.add(desc);
+				fieldList.add(downloadurl);
+				fieldList.add(force);
+
+				ret = 0;
+			}
+
+		} catch (Exception e) {
+
+		}
+
+		return ret;
+	}
+
+	public static String getDownloadNotifyURLString(Context context, int appId) {
+		String urlString = String.format("%s?appid=%d",
+				WAPI_DOWNLOAD_NOTIFY_URL, appId);
+		urlString = addGeneralParams(context, urlString);
+
+		return urlString;
+	}
+
+	/************************************************************
+	 * 
+	 * 获取反馈结果
+	 * 
+	 * @param context
+	 * @return
+	 */
+	public static String getFeedbackURLString(Context context, String key) {
+		DisplayMetrics dm = new DisplayMetrics();
+		((Activity) context).getWindowManager().getDefaultDisplay()
+				.getMetrics(dm);
+		int w = dm.widthPixels;
+		int h = dm.heightPixels;
+		int densityDpi = dm.densityDpi;
+		float density = dm.density;
+
+		String s = String.format("w=%d&h=%d&density=%d&os=%s&model=%s", w, h,
+				densityDpi, android.os.Build.VERSION.RELEASE,
+				android.os.Build.MODEL);
+
+		String urlString = String.format("%s?key=%s&deviceid=%s&%s",
+				WAPI_FEEDBACK_URL, key, AppConfig.getDeviceId(context), s);
+
+		urlString = addGeneralParams(context, urlString);
+
+		return urlString;
+	}
+
+	public static int parseFeedbackJSONResponse(Context context,
+			String responseString) {
+		int ret = 1;
+
+		try {
+			JSONObject jsonObject = new JSONObject(responseString);
+			JSONObject resultObject = jsonObject.getJSONObject("result");
+			ret = resultObject.getInt("code");
+
+		} catch (Exception e) {
+
+		}
+
+		return ret;
+	}
+
+}

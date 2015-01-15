@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 小米盒子: screen: 1280x720 density=1.3312501 densityDpi=213 -->
+    <!-- search button -->
+    <dimen name="search_button_margin_top">60dip</dimen>
+    <dimen name="search_button_margin_right">80dip</dimen>
+    
+    <dimen name="button_title_text_size">22sp</dimen>
+    <dimen name="general_button_width">180dip</dimen>
+    <dimen name="general_button_height">58dip</dimen>
+    
+    <dimen name="metro_item_text_size">24.0sp</dimen>
+    <dimen name="metro_item_shadow_offset">-70.0dip</dimen>
+    <dimen name="metro_item_short_edge_length">200.0dip</dimen>
+    <dimen name="metro_item_long_edge_length">330.0dip</dimen>
+    <dimen name="metro_item_reflected_image_height">120.0dip</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="tab_text_width">120dip</dimen>
+    <dimen name="tab_text_height">54dip</dimen>
+    
+    <dimen name="menubar_paddingLeft">70dip</dimen>
+    <dimen name="menubar_paddingTop">50dip</dimen>
+    
+    <dimen name="loading_text_size">30.0sp</dimen>
+    <dimen name="loading_text_margin_top">30dip</dimen>
+    
+    <dimen name="metro_top_margin">10dip</dimen>
+    
+    
+    <dimen name="btn_return_width">50dip</dimen>
+    <dimen name="btn_return_height">50dip</dimen>
+    
+    <!-- AppListActivity -->
+    <dimen name="applist_title_text_size">34.0sp</dimen>
+    <dimen name="applist_titlebar_margin_leftright">60.0dip</dimen>
+    <dimen name="applist_titlebar_margin_top">50.0dip</dimen>
+    <dimen name="applist_titlebar_underline_height">2.0dip</dimen>
+    <dimen name="applist_titlebar_text_margin_left">15dip</dimen>
+    <dimen name="applist_titlebar_gridview_margin_top">10dip</dimen>
+    <dimen name="applist_gridview_margin_bottom">40dip</dimen>
+    <dimen name="applist_app_item_width">100dip</dimen>
+    <dimen name="applist_app_item_height">100dip</dimen>
+    <dimen name="applist_app_item_text_size">24sp</dimen>
+    <dimen name="applist_app_item_text_height">34dip</dimen>
+    <dimen name="applist_app_item_button_width">100dip</dimen>
+    <dimen name="applist_app_item_button_height">30dip</dimen>
+    
+    
+    <!-- app detail dialog -->
+    <dimen name="appdetail_dialog_width">600dip</dimen>
+    <dimen name="appdetail_dialog_height">387dip</dimen>
+    
+    <dimen name="appdetail_dialog_button_width">580dip</dimen>
+    <dimen name="appdetail_dialog_button_height">40dip</dimen>
+    <dimen name="appdetail_dialog_button_margin_bottom">45dip</dimen>
+    <dimen name="appdetail_dialog_button_vspace">20dip</dimen>
+    <dimen name="appdetail_dialog_app_icon_width">112dip</dimen>
+    <dimen name="appdetail_dialog_app_icon_height">112dip</dimen>
+    <dimen name="appdetail_dialog_app_icon_margin_left">50dip</dimen>
+    <dimen name="appdetail_dialog_app_icon_margin_top">50dip</dimen>
+    <dimen name="appdetail_dialog_app_title_text_size">30sp</dimen>
+    <dimen name="appdetail_dialog_app_info_text_size">25sp</dimen>
+    
+    <!-- download manage -->
+    <dimen name="download_icon_margin_left">30dip</dimen>
+    <dimen name="download_icon_margin_top">30dip</dimen>
+    
+    <dimen name="download_option_button_width">280dip</dimen>
+    <dimen name="download_option_button_height">58dip</dimen>
+    <dimen name="download_option_button_text_size">20sp</dimen>
+
+    <dimen name="download_option_first_button_margin_top">40dip</dimen>
+    <dimen name="download_option_button_margin_top">12dip</dimen>
+    
+   <dimen name="setting_bg_item_width">250.0dip</dimen>
+    <dimen name="setting_bg_item_height">169.0dip</dimen>
+    <dimen name="setting_bg_item_marginleft">-50dip</dimen>
+    <dimen name="setting_bg_item_margintop">-50dip</dimen>
+    <dimen name="setting_bg_content_margintop">18dip</dimen>
+
+    
+    
+    <!-- tips dialog -->
+    <dimen name="tips_dialog_text_size">30sp</dimen>
+    <dimen name="tips_dialog_loading_width">50dip</dimen>
+    <dimen name="tips_dialog_loading_height">50dip</dimen>
+
+    
+    <dimen name="feedback_item_width">250.0dip</dimen>
+    <dimen name="feedback_item_height">250.0dip</dimen>
+    <dimen name="feedback_item_marginleft">-65dip</dimen>
+    <dimen name="feedback_item_margintop">-65dip</dimen>
+    <dimen name="feedback_text_margintop">200dip</dimen>
+    
+    <!-- search -->
+    <dimen name="search_char_view_width">30dip</dimen>
+    <dimen name="search_char_view_height">30dip</dimen>
+    <dimen name="search_char_view_space">5dip</dimen>
+    <dimen name="search_char_text_size">16sp</dimen>
+    <dimen name="search_keyboard_margin_top">20dip</dimen>
+    <dimen name="search_inputbox_text_size">22sp</dimen>
+    <dimen name="search_inputbox_width">220dip</dimen>
+    <dimen name="search_inputbox_height">52dip</dimen>
+
+    <dimen name="search_app_item_width">70dip</dimen>
+    <dimen name="search_app_item_height">70dip</dimen>
+    
+    <dimen name="search_icon_margin_left">20dip</dimen>
+    <dimen name="search_icon_margin_top">10dip</dimen>
+    <dimen name="search_app_text_size">24sp</dimen>
+    <dimen name="search_app_info_text_size">18sp</dimen>
+
+    <dimen name="feedback_textsize">20sp</dimen>
+    
+    <integer name="button_text_shadow_radius">1</integer>
+    <integer name="button_text_shadow_dx">2</integer>
+    <integer name="button_text_shadow_dy">2</integer>
+    
+</resources>

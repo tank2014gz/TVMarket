@@ -1,0 +1,36 @@
+package com.soniq.tvmarket.utils;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
+public class MD5Util {
+
+    public static String getMD5Encoding(String s) {
+		String output = "";
+    	try{
+			byte[] input = s.getBytes("utf-8");
+			char[] hexChar = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+				'a', 'b', 'c', 'd', 'e', 'f' };
+			try {
+			    MessageDigest md = MessageDigest.getInstance("MD5");
+			    md.update(input);
+			    byte[] tmp = md.digest();
+			    char[] str = new char[32];
+			    byte b = 0;
+			    for (int i = 0; i < 16; i++) {
+				b = tmp[i];
+				str[2 * i] = hexChar[b >>> 4 & 0xf];
+				str[2 * i + 1] = hexChar[b & 0xf];
+			    }
+			    output = new String(str);
+			} catch (NoSuchAlgorithmException e) {
+			    e.printStackTrace();
+			}
+    	}
+		catch(Exception e)
+		{
+			
+		}
+			return output;
+    }
+}

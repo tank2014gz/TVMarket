@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/soniq/!svn/ver/411/android/TVMarket/src/com/soniq/tvmarket/data
+END
+AppInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/soniq/!svn/ver/387/android/TVMarket/src/com/soniq/tvmarket/data/AppInfo.java
+END
+MyProfile.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/soniq/!svn/ver/387/android/TVMarket/src/com/soniq/tvmarket/data/MyProfile.java
+END
+RecommendInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/soniq/!svn/ver/411/android/TVMarket/src/com/soniq/tvmarket/data/RecommendInfo.java
+END
+MyDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/soniq/!svn/ver/387/android/TVMarket/src/com/soniq/tvmarket/data/MyDB.java
+END
+DataModule.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/soniq/!svn/ver/387/android/TVMarket/src/com/soniq/tvmarket/data/DataModule.java
+END
+AppClassInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/soniq/!svn/ver/387/android/TVMarket/src/com/soniq/tvmarket/data/AppClassInfo.java
+END
+WAPI.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/soniq/!svn/ver/387/android/TVMarket/src/com/soniq/tvmarket/data/WAPI.java
+END
+AppConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/soniq/!svn/ver/402/android/TVMarket/src/com/soniq/tvmarket/data/AppConfig.java
+END
